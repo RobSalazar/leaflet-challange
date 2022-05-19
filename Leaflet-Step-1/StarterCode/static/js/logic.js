@@ -60,7 +60,7 @@ function createMap(earthquakes) {
         id: "mapbox/streets-v11"
     });
 
-    // Adding legend to the map
+    // Adding legend to the map with corresponding colors
     var legend = L.control({
         position: "bottomright"
       });
@@ -72,7 +72,7 @@ function createMap(earthquakes) {
         var colors = ["#77FF33", "#6EAD2A", "#F6F92F", "#F9AC2F","#F9471B", "#5D1200"];
     
     
-      // loop thry the intervals of colors to put it in the label
+      // loop through the intervals of colors to put it in the label
         for (var i = 0; i<grades.length; i++) {
           div.innerHTML +=
           "<li style= 'background: " + colors[i] + "'></li> " +
